@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[WINDOWS平台下MAVEN的安装和配置]]></title>
+    <url>%2F2018%2F05%2F25%2FWINDOWS%E5%B9%B3%E5%8F%B0%E4%B8%8BMAVEN%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[MAVEN的安装下载MAVEN使用百度搜索关键字“Maven” 或者直接打开网址： http://maven.apache.org/ 选择“Download”界面 选择一个版本进行下载 当前最新版下载地址：v3.5.0 安装MAVEN等待下载完成，将下载的压缩包解压，例如我将压缩包解压到“D盘” 配置环境变量打开控制面板 选择系统 打开高级系统设置 打开环境变量配置 新建变量名“MAVEN_HOME”，变量值为MAVEN解压后的根路径例如：变量名：MAVEN_HOME变量值：D:\apache-maven-3.5.0 将MAVEN_HOME配置到Path中 例如：%MAVEN_HOME%\bin（注意，Path变量值如果是在最后，则不用“;”） 验证MAVEN是否安装成功使用Win+R键，打开运行界面，输入cmd，打开控制台 在控制台中输入mvn --version，有输出MAVEN信息时，你的MAVEN就安装成功了，反之则不成功 MAVEN的配置打开MAVEN根目录下conf文件夹中的settings.xml文件 修改MAVEN本地仓库地址settings.xml中的settings &gt; localRepository可以修改MAVEN的本地仓库地址例如，我修改的是1&lt;localRepository&gt;E:/.m2/repository&lt;/localRepository&gt; 修改MAVEN代理配置settings.xml中的settings &gt; mirrors可以修改MAVEN的代理配置例如，我修改的是123456&lt;mirror&gt; &lt;id&gt;nexus-aliyun&lt;/id&gt; &lt;mirrorOf&gt;*&lt;/mirrorOf&gt; &lt;name&gt;Nexus aliyun&lt;/name&gt; &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;&lt;/mirror&gt; -EOF-]]></content>
+      <categories>
+        <category>项目管理工具</category>
+      </categories>
+      <tags>
+        <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[WINDOWS平台下CMDER的安装和配置]]></title>
     <url>%2F2018%2F05%2F25%2FWINDOWS%E5%B9%B3%E5%8F%B0%E4%B8%8BCMDER%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[CMDER的安装下载CMDER打开GITHUB，搜索cmder，进入cmder的项目主页 选择GITHUB的版本发布选项，打开版本发布界面 选择一个发布版，进行下载 当前最新版下载地址：v1.3.2下载地址 安装CMDER等待下载完成，将下载的压缩包解压，例如我将压缩包解压到“C盘” 配置环境变量打开控制面板 选择系统 打开高级系统设置 打开环境变量配置 新建变量名“CMDER_HOME”，变量值为CMDER解压后的根路径例如：变量名：CMDER_HOME变量值：C:\Users\****\AppData\Local\cmder_mini 将CMDER_HOME配置到Path中 例如：%CMDER_HOME%（注意，Path变量值如果是在最后，则不用打“;”） 验证CMDER是否安装成功使用Win+R键，打开运行界面，输入cmder，运行正常则cmder安装成功 将CMDER加入Windows的右键菜单中在管理员权限的终端输入命令行Cmder.exe /REGISTER ALL即可将cmder加入到Windows的右键菜单中 输入命令行1Cmder.exe /REGISTER ALL 效果图如下 -EOF-]]></content>
