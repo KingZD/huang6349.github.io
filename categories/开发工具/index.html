@@ -110,14 +110,13 @@
 
   <meta name="description" content="黄亚龙的技术博客">
 <meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="https://huang6349.github.io/categories/index.html">
+<meta property="og:title" content="黄亚龙的技术博客">
+<meta property="og:url" content="https://huang6349.github.io/categories/开发工具/index.html">
 <meta property="og:site_name" content="黄亚龙的技术博客">
 <meta property="og:description" content="黄亚龙的技术博客">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-24T11:23:59.385Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
+<meta name="twitter:title" content="黄亚龙的技术博客">
 <meta name="twitter:description" content="黄亚龙的技术博客">
 
 
@@ -125,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="https://huang6349.github.io/categories/"/>
+  <link rel="canonical" href="https://huang6349.github.io/categories/开发工具/"/>
 
 
 
@@ -135,7 +134,7 @@
   };
 </script>
 
-  <title>分类 | 黄亚龙的技术博客</title>
+  <title>分类: 开发工具 | 黄亚龙的技术博客</title>
   
 
 
@@ -182,7 +181,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -334,71 +333,59 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-    
-    
-    <div class="post-block page">
-      <header class="post-header">
-
-<h1 class="post-title" itemprop="name headline">分类</h1>
-
-<div class="post-meta">
   
   
+  
+  <div class="post-block category">
 
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-        
-        
-          <div class="category-all-page">
-            <div class="category-all-title">
-                
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                目前共计 2 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端知识/">前端知识</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/开发工具/">开发工具</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
-        
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>开发工具<small>分类</small>
+        </h1>
       </div>
+
       
-      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/2018/05/25/WINDOWS平台下IDEA的安装和配置/" itemprop="url">
+              
+                <span itemprop="name">WINDOWS平台下IDEA的安装和配置</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-05-25T11:12:03+08:00"
+              content="2018-05-25" >
+          05-25
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
       
     </div>
-    
 
-
-
-    
-    
-    
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
           
-
-  
-
-
 
         </div>
         
@@ -622,10 +609,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
-
-
 
   
 
@@ -1054,13 +1037,13 @@
       var articles = db.collection('articles')
 
       //https://hexo.io/zh-tw/docs/variables.html
-      var isPost = '分类'.length > 0
+      var isPost = ''.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
       var isTag = ''.length > 0
 
       if (isPost) { //is article page
-        var title = '分类'
+        var title = ''
         var doc = articles.doc(title)
 
         getCount(doc, true).then(appendCountTo($('.post-meta')))
@@ -1068,7 +1051,7 @@
       else if (!isArchive && !isCategory && !isTag) { //is index page
         var titles = [] //array to titles
 
-        var postsstr = '' //if you have a better way to get titles of posts, please change it
+        var postsstr = 'titles.push("WINDOWS平台下IDEA的安装和配置");' //if you have a better way to get titles of posts, please change it
         eval(postsstr)
 
         var promises = titles.map(function (title) {
