@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[WINDOWS平台下CMDER的安装和配置]]></title>
     <url>%2F2018%2F05%2F25%2FWINDOWS%E5%B9%B3%E5%8F%B0%E4%B8%8BCMDER%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE%2F</url>
-    <content type="text"><![CDATA[CMDER的安装下载CMDER打开GITHUB，搜索cmder，进入cmder的项目主页 选择GITHUB的版本发布选项，打开版本发布界面 选择一个发布版，进行下载 当前最新版下载地址：v1.3.2下载地址 安装CMDER等待下载完成，将下载的压缩包解压，例如我将压缩包解压到“C盘” 配置环境变量打开控制面板 选择系统 打开高级系统设置 打开环境变量配置 新建变量名“CMDER_HOME”，变量值为CMDER解压后的根路径例如：变量名：CMDER_HOME变量值：C:\Users\****\AppData\Local\cmder_mini 将CMDER_HOME配置到Path中 例如：%CMDER_HOME%（注意，Path变量值如果是在最后，则不用打“;”） 验证CMDER是否安装成功使用Win+R键，打开运行界面，输入cmder，运行正常则cmder安装成功 将CMDER加入Windows的右键菜单中在管理员权限的终端输入命令行Cmder.exe /REGISTER ALL即可将cmder加入到Windows的右键菜单中 输入命令行1Cmder.exe /REGISTER ALL 效果图如下]]></content>
+    <content type="text"><![CDATA[CMDER的安装下载CMDER打开GITHUB，搜索cmder，进入cmder的项目主页 选择GITHUB的版本发布选项，打开版本发布界面 选择一个发布版，进行下载 当前最新版下载地址：v1.3.2下载地址 安装CMDER等待下载完成，将下载的压缩包解压，例如我将压缩包解压到“C盘” 配置环境变量打开控制面板 选择系统 打开高级系统设置 打开环境变量配置 新建变量名“CMDER_HOME”，变量值为CMDER解压后的根路径例如：变量名：CMDER_HOME变量值：C:\Users\****\AppData\Local\cmder_mini 将CMDER_HOME配置到Path中 例如：%CMDER_HOME%（注意，Path变量值如果是在最后，则不用打“;”） 验证CMDER是否安装成功使用Win+R键，打开运行界面，输入cmder，运行正常则cmder安装成功 将CMDER加入Windows的右键菜单中在管理员权限的终端输入命令行Cmder.exe /REGISTER ALL即可将cmder加入到Windows的右键菜单中 输入命令行1Cmder.exe /REGISTER ALL 效果图如下 -EOF-]]></content>
       <categories>
         <category>开发工具</category>
       </categories>
